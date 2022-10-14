@@ -1,0 +1,26 @@
+
+def even_fibonacci_numbers(limit):
+
+    a = 1
+    b = 2
+    sum = 0
+
+    while (b <= limit):
+# Evem number test upfate sum
+        if b % 2 == 0:
+            sum += b
+
+# update varubles
+        temp_num = a
+        a = b
+        b += temp_num
+
+    return sum
+
+
+def main():
+    print(even_fibonacci_numbers(4000000))
+
+if __name__ == '__main__':
+    main()
+
