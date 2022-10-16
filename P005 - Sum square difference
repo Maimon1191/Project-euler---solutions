@@ -1,0 +1,42 @@
+import math
+
+def squrae_singel_num_sum(rng):
+    """
+    :param rng: rng is the wanted range of positive number.
+    :return: The function returns the sum of the squares of the first natural numbers in range.
+    """
+    if rng > 1:
+        n = 1
+        x = 1
+        sum1 = 0
+        while n <= rng:
+            sum1 += (x**2)
+            x += 1
+            n += 1
+        return (sum1)
+    else:
+        return "please enter a posiive integer above 1 "
+
+
+def sqaure_total_sum(rng2):
+    """
+    :param rng: rng2 is the wanted range of positive number.
+    :return: The function returns the square of the sum of the first natural numbers in range.
+    """
+    if rng2 > 1:
+        m = 1
+        y = 1
+        sum2 = 0
+        while m <= rng2:
+            sum2 += y
+            m += 1
+            y += 1
+        return (sum2 ** 2)
+    else:
+        return "Plesae enter intiger above 1"
+
+
+def main():
+    return sqaure_total_sum(100) - squrae_singel_num_sum(100)
+if __name__=="__main__":
+    print(main())
